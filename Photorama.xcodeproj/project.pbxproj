@@ -15,6 +15,7 @@
 		3FBF13132057413600F71131 /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF13122057413600F71131 /* PhotoramaUITests.swift */; };
 		3FBF1321205741DA00F71131 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF1320205741DA00F71131 /* PhotosViewController.swift */; };
 		3FBF1323205745BB00F71131 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF1322205745BB00F71131 /* FlickrAPI.swift */; };
+		3FBF1325205748CB00F71131 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF1324205748CB00F71131 /* PhotoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FBF13142057413600F71131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBF1320205741DA00F71131 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		3FBF1322205745BB00F71131 /* FlickrAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		3FBF1324205748CB00F71131 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3FBF12FE2057413600F71131 /* Info.plist */,
 				3FBF1320205741DA00F71131 /* PhotosViewController.swift */,
 				3FBF1322205745BB00F71131 /* FlickrAPI.swift */,
+				3FBF1324205748CB00F71131 /* PhotoStore.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				3FBF1323205745BB00F71131 /* FlickrAPI.swift in Sources */,
 				3FBF1321205741DA00F71131 /* PhotosViewController.swift in Sources */,
+				3FBF1325205748CB00F71131 /* PhotoStore.swift in Sources */,
 				3FBF12F32057413600F71131 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
