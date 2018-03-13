@@ -1,10 +1,10 @@
 import Foundation
 
 class PhotoStore {
-    private let session: URLSession = {
+    private let session: URLSession = { () -> URLSession in
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
-    }
+    }()
     
     func fetchInterestingPhotos() {
         let url = FlickrAPI.interestingPhotosURL
