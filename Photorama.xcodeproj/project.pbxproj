@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F96CD1D20607A8C00C873B7 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96CD1C20607A8C00C873B7 /* PhotoDataSource.swift */; };
+		3F96CD1F20607FAD00C873B7 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96CD1E20607FAD00C873B7 /* PhotoCollectionViewCell.swift */; };
 		3FBF12F32057413600F71131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF12F22057413600F71131 /* AppDelegate.swift */; };
 		3FBF12F82057413600F71131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF12F62057413600F71131 /* Main.storyboard */; };
 		3FBF12FA2057413600F71131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF12F92057413600F71131 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		3F96CD1C20607A8C00C873B7 /* PhotoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		3F96CD1E20607FAD00C873B7 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FBF12EF2057413600F71131 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBF12F22057413600F71131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBF12F72057413600F71131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				3FBF1324205748CB00F71131 /* PhotoStore.swift */,
 				3FBF132620574E3100F71131 /* Photo.swift */,
 				3F96CD1C20607A8C00C873B7 /* PhotoDataSource.swift */,
+				3F96CD1E20607FAD00C873B7 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				3FBF1321205741DA00F71131 /* PhotosViewController.swift in Sources */,
 				3FBF1325205748CB00F71131 /* PhotoStore.swift in Sources */,
 				3F96CD1D20607A8C00C873B7 /* PhotoDataSource.swift in Sources */,
+				3F96CD1F20607FAD00C873B7 /* PhotoCollectionViewCell.swift in Sources */,
 				3FBF12F32057413600F71131 /* AppDelegate.swift in Sources */,
 				3FBF132720574E3100F71131 /* Photo.swift in Sources */,
 			);
