@@ -41,6 +41,9 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
             // recent index path
             
             // (Note: You will have an error on the next line; you will fix it soon)
+            
+            //guard let photoIndex = self.photoDataSource.photos.index(of: photo) else { return }
+            
             guard let photoIndex = self.photoDataSource.photos.index(of: photo),
                 case let .success(image) = result else {
                     return
@@ -54,4 +57,32 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCollectionViewCell", for: indexPath) as! PhotoCollectionViewCell
+        
+        self.performSegue(withIdentifier: "showDetail", sender: cell)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            
+            
+            /*
+            guard let cell = sender as? PhotoCollectionViewCell,
+                let photoDetailViewController = segue.destination as? PhotoDetailViewController,
+                let indexPath = collectionView.indexPath(for: cell) else {
+                    return
+            }
+            let photo = photoDataSource.photos[(indexPath.row)]
+            photoDetailViewController.photo = photo
+            */
+            
+            let cell = sender as? PhotoCollectionViewCell
+            let detailVC = segue.destination as? PhotoDetailViewController
+            
+            detailVC?.test = "Test"
+            //detailVC?.imageView.image = cell?.imageView.image
+            
+        }
+    }
 }

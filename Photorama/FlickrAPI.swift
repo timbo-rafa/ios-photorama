@@ -6,6 +6,7 @@ enum FlickrError: Error {
 
 enum Method: String {
     case interestingPhotos = "flickr.interestingness.getList"
+    case searchPhotos = "Look at code of Tom"
 }
 
 struct FlickrAPI {

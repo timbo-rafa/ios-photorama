@@ -74,11 +74,44 @@
                     <navigationItem key="navigationItem" title="Photorama" id="uQA-2D-4a0"/>
                     <connections>
                         <outlet property="collectionView" destination="dKM-X0-Qw6" id="qbL-ce-NcK"/>
+                        <segue destination="6Sf-ff-rXZ" kind="show" identifier="showDetail" action="showDetailViewController:sender:" id="NCR-QM-396"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.2" y="122.78860569715144"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="Tiv-sn-14X">
+            <objects>
+                <viewController id="6Sf-ff-rXZ" customClass="PhotoDetailViewController" customModule="Photorama" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qmj-QL-dOu"/>
+                        <viewControllerLayoutGuide type="bottom" id="SZd-Hz-W9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="85o-rm-8bJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xlt-Pi-CU2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xlt-Pi-CU2" firstAttribute="leading" secondItem="85o-rm-8bJ" secondAttribute="leading" id="Nme-LY-Qke"/>
+                            <constraint firstAttribute="trailing" secondItem="xlt-Pi-CU2" secondAttribute="trailing" id="ZUd-3g-X21"/>
+                            <constraint firstAttribute="bottom" secondItem="xlt-Pi-CU2" secondAttribute="bottom" id="vfn-If-P7G"/>
+                            <constraint firstItem="xlt-Pi-CU2" firstAttribute="top" secondItem="85o-rm-8bJ" secondAttribute="top" id="xb7-Ze-B86"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="xlt-Pi-CU2" id="yQr-NJ-rxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MC9-tt-DO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799.2" y="120.98950524737631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6gr-o2-Pwq">
